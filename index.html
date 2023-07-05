@@ -71,19 +71,19 @@
                     var str = $("<tr></tr>");
 
                     // Level
-                    $("<td width='5%'>" + mark + x + "</td>").appendTo(str);
+                    $("<td class='table-dark' width='5%'>" + mark + x + "</td>").appendTo(str);
 
                     // Title
-                    $("<td width='45%'>" +
+                    $("<td class='table-dark' width='45%'>" +
                         "<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=" + info[
                             i]
                         .md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
 
                     // Artist
-                    $("<td width='20%'>" + info[i].artist + "</td>").appendTo(str);
+                    $("<td class='table-dark' width='20%'>" + info[i].artist + "</td>").appendTo(str);
 
                     // 譜面画像
-                    $("<td width='10%'>" +
+                    $("<td class='table-dark' width='10%'>" +
                         "<a href='http://www.ribbit.xyz/bms/score/view?md5=" + info[
                             i]
                         .md5 + "' target='_blank'>" + "譜面画像" + "</a></td>").appendTo(str);
@@ -92,7 +92,7 @@
                     count++;
                     
                     // Comment
-                    $("<td width='10%'>" + info[i].comment + "</td>").appendTo(str);
+                    $("<td class='table-dark' width='10%'>" + info[i].comment + "</td>").appendTo(str);
                     str.appendTo(obj);
                     count++;
 
@@ -100,7 +100,7 @@
                 $("</tbody>").appendTo(obj);
 
                 if (obj_sep != null) {
-                    obj_sep.html("<td class='table-dark' style='text-align:center' colspan='4'>" + "<b>" + mark + x +
+                    obj_sep.html("<td class='table-dark' style='text-align:center' colspan='5'>" + "<b>" + mark + x +
                         " (" + count + "譜面)</b></td>");
                 }
             }
