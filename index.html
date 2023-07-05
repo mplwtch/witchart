@@ -57,10 +57,6 @@
                 var obj_sep = null;
                 for (var i = 0; i < info.length; i++) {
                     if (x != info[i].level) {
-                        if (obj_sep != null) {
-                            obj_sep.html("<td colspan='5'>" + "<b>" + mark + x + " (" + count +
-                                "譜面)</b></td>");
-                        }
                         obj_sep = $("<tr class='table-dark' style='text-align:center' id='" + mark + info[i].level +
                             "'></tr>");
                         obj_sep.appendTo(obj);
@@ -71,19 +67,19 @@
                     var str = $("<tr></tr>");
 
                     // Level
-                    $("<td class='table-dark' width='5%'>" + mark + x + "</td>").appendTo(str);
+                    $("<td width='5%'>" + mark + x + "</td>").appendTo(str);
 
                     // Title
-                    $("<td class='table-dark' width='45%'>" +
+                    $("<td width='45%'>" +
                         "<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=" + info[
                             i]
                         .md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
 
                     // Artist
-                    $("<td class='table-dark' width='20%'>" + info[i].artist + "</td>").appendTo(str);
+                    $("<td width='20%'>" + info[i].artist + "</td>").appendTo(str);
 
                     // 譜面画像
-                    $("<td class='table-dark' width='10%'>" +
+                    $("<td width='10%'>" +
                         "<a href='http://www.ribbit.xyz/bms/score/view?md5=" + info[
                             i]
                         .md5 + "' target='_blank'>" + "譜面画像" + "</a></td>").appendTo(str);
@@ -92,17 +88,13 @@
                     count++;
                     
                     // Comment
-                    $("<td class='table-dark' width='10%'>" + info[i].comment + "</td>").appendTo(str);
+                    $("<td width='10%'>" + info[i].comment + "</td>").appendTo(str);
                     str.appendTo(obj);
                     count++;
 
                 }
                 $("</tbody>").appendTo(obj);
 
-                if (obj_sep != null) {
-                    obj_sep.html("<td class='table-dark' style='text-align:center' colspan='5'>" + "<b>" + mark + x +
-                        " (" + count + "譜面)</b></td>");
-                }
             }
         </script>
     </div>
