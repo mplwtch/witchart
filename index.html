@@ -55,9 +55,10 @@
                 $("<thead class='table-dark'><tr><th>Level</th><th>Title</th><th>Artist</th><th>ChartView</th><th>Comment</th></tr></thead><tbody>")
                     .appendTo(obj);
                 var obj_sep = null;
+                
                 for (var i = 0; i < info.length; i++) {
                     if (x != info[i].level) {
-                        obj_sep = $("<tr class='table-dark' style='text-align:center' id='" + mark + info[i].level +
+                        obj_sep = $("style='text-align:center' id='" + mark + info[i].level +
                             "'></tr>");
                         obj_sep.appendTo(obj);
                         count = 0;
@@ -83,11 +84,9 @@
                             i]
                         .md5 + "' target='_blank'>" + "譜面画像" + "</a></td>").appendTo(str);
                     
-                    str.appendTo(obj);
-                    count++;
-                    
                     // Comment
                     $("<td width='10%'>" + info[i].comment + "</td>").appendTo(str);
+                    
                     str.appendTo(obj);
                     count++;
 
