@@ -52,7 +52,7 @@
                 var obj = $("#table_int");
 
                 obj.html("");
-                $("<thead class='table-dark'><tr><th>Level</th><th>Title</th><th>Artist</th><th>Comment</th></tr></thead><tbody>")
+                $("<thead class='table-dark'><tr><th>Level</th><th>Title</th><th>Artist</th><th>ChartView</th><th>Comment</th></tr></thead><tbody>")
                     .appendTo(obj);
                 var obj_sep = null;
                 for (var i = 0; i < info.length; i++) {
@@ -80,8 +80,17 @@
                         .md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
 
                     // Artist
-                    $("<td width='40%'>" + info[i].artist + "</td>").appendTo(str);
+                    $("<td width='20%'>" + info[i].artist + "</td>").appendTo(str);
 
+                    // 譜面画像
+                    $("<td width='10%'>" +
+                        "<a href='http://www.ribbit.xyz/bms/score/view?md5=" + info[
+                            i]
+                        .md5 + "' target='_blank'>" + "譜面画像" + "</a></td>").appendTo(str);
+                    
+                    str.appendTo(obj);
+                    count++;
+                    
                     // Comment
                     $("<td width='10%'>" + info[i].comment + "</td>").appendTo(str);
                     str.appendTo(obj);
