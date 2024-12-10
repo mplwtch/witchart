@@ -1,7 +1,7 @@
 {
 "name" : "Witchart",
 "symbol" : "魔st",
-"data_url" : "https://script.googleusercontent.com/macros/echo?user_content_key=fqXYibIDggy5mLfyh7Qcw0boQBmVkUWNqfYg14rmsopM9rgV-5hs7qEQuPQt4yZrNdNYsgzQZEK8kUsfGT5kKU7gRQeeeRism5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnKr9fcrkAjaVcE9e7zoUPJlHq_2ZLulKCk1iTkhtQ-E-w053D14f8-ZgXke6o5MRSsG1jXM3xR1xUEUGafdCHdeAIW36L0IIDQ&lib=ML-WXlbtTH-AAIOlzEP5Uov-2qzvq4NmQ"
+"data_url" : "https://script.googleusercontent.com/macros/echo?user_content_key=fqXYibIDggy5mLfyh7Qcw0boQBmVkUWNqfYg14rmsopM9rgV-5hs7qEQuPQt4yZrNdNYsgzQZEK8kUsfGT5kKU7gRQeeeRism5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnKr9fcrkAjaVcE9e7zoUPJlHq_2ZLulKCk1iTkhtQ-E-w053D14f8-ZgXke6o5MRSsG1jXM3xR1xUEUGafdCHdeAIW36L0IIDQ&lib=ML-WXlbtTH-AAIOlzEP5Uov-2qzvq4NmQ","level_order" : [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
 "course":[
 {"name":"Witchart 異世界転生 スキル《スライム》","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["9689c2bfe819794395aa6a08ceccb55b","c8f94305dd353be85579d3b8b4e377d4","d11f78e0053ca44f4578d5221ff6bcbd","c3ad9a4de334476640f6f2f747e34758"]},
 {"name":"Witchart 異世界転生 スキル《奴隷》","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["79a13c610b502e1ad2c6fb3bd1e77549","2b352c7e44058772cb03c7bd1e8dd051","38ab58bd6850fd846c90e62ec94f97c1","8177c1c33680b65dcd69cb0df3c34405"]},
