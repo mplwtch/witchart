@@ -2,4 +2,16 @@
 "name" : "Witchart",
 "symbol" : "魔st",
 "data_url" : "https://script.googleusercontent.com/macros/echo?user_content_key=fqXYibIDggy5mLfyh7Qcw0boQBmVkUWNqfYg14rmsopM9rgV-5hs7qEQuPQt4yZrNdNYsgzQZEK8kUsfGT5kKU7gRQeeeRism5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnKr9fcrkAjaVcE9e7zoUPJlHq_2ZLulKCk1iTkhtQ-E-w053D14f8-ZgXke6o5MRSsG1jXM3xR1xUEUGafdCHdeAIW36L0IIDQ&lib=ML-WXlbtTH-AAIOlzEP5Uov-2qzvq4NmQ"
+"course":[
+{"name":"Witchart 異世界転生 スキル《スライム》","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["9689c2bfe819794395aa6a08ceccb55b","c8f94305dd353be85579d3b8b4e377d4","d11f78e0053ca44f4578d5221ff6bcbd","c3ad9a4de334476640f6f2f747e34758"]},
+{"name":"Witchart 異世界転生 スキル《奴隷》","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["79a13c610b502e1ad2c6fb3bd1e77549","2b352c7e44058772cb03c7bd1e8dd051","38ab58bd6850fd846c90e62ec94f97c1","8177c1c33680b65dcd69cb0df3c34405"]},
+{"name":"Witchart 異世界転生 スキル《村人》","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["349360cf6f6dfbb9ee3e11ec5b3b0e00","159f88724130d5fa622aed359d6447ed","5eeb733cb4ffc0093c1b8c1fddee9a67","8ce27898dc3cf56c8521d58f86c59143"]},
+{"name":"Witchart 異世界転生 スキル《受付嬢》","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["69f7f584d349ba77e8a4bc5a7decdd0e","7762e67c33ce9299166a6f982e500317","bc38e962541240b069771ab046010708","2ea69cd42b0143a7d5e35c32cf4b8995"]},
+{"name":"Witchart 異世界転生 スキル《C級冒険者》","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["f9cdba207737a0cdb500a97971e86839","90762901c053740bfbe6aa6f75a21abe","577a7bcb11475a94e64a5bf518a7293c","0d900910b4e5abd0719ac885f853c136"]},
+{"name":"Witchart 異世界転生 スキル《B級冒険者》","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["d27bbc6febfd8587c97410869617b230","e026034616e19a1b8ac664b117dc7802","cb461a73ed27663184ccf2e996d8f4de","9a9747457f7608b70d82ae36049e8fdb"]},
+{"name":"Witchart 異世界転生 スキル《A級冒険者》","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["8ea4ef3e0d8c7131fa640e28eab01f08","5ec8fc39e595eb170a9d531546b6959d","cb59859380e9d532bc07ae9b11ca7dec","5a5b9925a0125e22613723788935f3cb"]},
+{"name":"Witchart 異世界転生 スキル《S級冒険者》","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["d9ff786a7fd28217a4c7206c22f4da98","2461741e8f4e16e73cb2f2da061288d1","41217e6781381b7363d187fdb6a5d8fa","5a19b0709fc66861919f4a481f25dbd0"]},
+{"name":"Witchart 異世界転生 スキル《ギルドマスター》","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["a03a6fb99314771b5f408e1556b1d124","5bbb54a97723a828dd2bd80759891d1f","d4fbc1984065d8e8e10f093714875dfe","8f736568e91c14df55a5d29f71e3356d"]},
+{"name":"Witchart 異世界転生 スキル《勇者》","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["be057d989e0b40b76254133e7df3c6ac","02b4415fab3c3941780eb92355ed19cb","3d75cb1628f6a177c0d33fa3c314272d","38cde0f87a2f1a29578766de24ad2091"]}
+]
 }
