@@ -87,7 +87,7 @@
                         var downloadLinks = "";
 
                     // 動画列
-                    var videoLink = "-";
+                    var videoLink = "";
 
                     if (info[i].youtube && info[i].youtube.trim() !== "") {
                         videoLink =
@@ -116,7 +116,7 @@
 
                     // 空欄対策
                     if (downloadLinks === "") {
-                        downloadLinks = "-";
+                        downloadLinks = "";
                     }
 
                     $("<td width='10%'>" + downloadLinks + "</td>").appendTo(str);
@@ -127,17 +127,8 @@
                             i]
                         .md5 + "' target='_blank'>" + "譜面画像" + "</a></td>").appendTo(str);
                     
-
-                    // Comment（マウスオーバー表示）
-                    var commentText = info[i].comment ? info[i].comment : "";
-
-                    if (commentText.trim() !== "") {
-                        $("<td width='10%'>" +
-                            "<span title='" + commentText + "' style='cursor:pointer;'>💬</span>" +
-                            "</td>").appendTo(str);
-                    } else {
-                        $("<td width='10%'>-</td>").appendTo(str);
-                    }
+                    // Comment
+                    $("<td width='10%'>" + info[i].comment + "</td>").appendTo(str);
                     
                     str.appendTo(obj);
                     count++;
