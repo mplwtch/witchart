@@ -55,7 +55,17 @@
                 var obj = $("#table_int");
 
                 obj.html("");
-                $("<thead class='table-dark'><tr><th>Level</th><th>Title</th><th>Artist</th><th>Video</th><th>ChartView</th><th>Comment</th></tr></thead><tbody>")
+                $("<thead class='table-dark'>
+                    <tr>
+                    <th>Level</th>
+                    <th>Title</th>
+                    <th>Artist</th>
+                    <th>Download</th>
+                    <th>Video</th>
+                    <th>ChartView</th>
+                    <th>Comment</th>
+                    </tr>
+                  </thead><tbody>")
                     .appendTo(obj);
                 var obj_sep = null;
                 
@@ -81,37 +91,43 @@
                     // Artist
                     $("<td width='20%'>" + info[i].artist + "</td>").appendTo(str);
 
+                    // 動画列
+                    var videoLink = "-";
 
-
-                    // Links列（動画 / 本体 / 差分）
-                    var links = "";
-
-                    // 動画
                     if (info[i].youtube && info[i].youtube.trim() !== "") {
-                        links += "<a href='https://www.youtube.com/watch?v=" +
+                        videoLink =
+                            "<a href='https://www.youtube.com/watch?v=" +
                             info[i].youtube +
-                            "' target='_blank'>動画</a> ";
+                            "' target='_blank'>動画</a>";
                     }
 
+                    $("<td width='8%'>" + videoLink + "</td>").appendTo(str);
+
+                    // Download列（本体 / 差分）
+                        var downloadLinks = "";
+                    
                     // 本体URL
                     if (info[i]["本体URL"] && info[i]["本体URL"].trim() !== "") {
-                        links += "<a href='" +
+                        downloadLinks +=
+                            "<a href='" +
                             info[i]["本体URL"] +
                             "' target='_blank'>本体</a> ";
                     }
 
                     // 差分URL
                     if (info[i]["差分URL"] && info[i]["差分URL"].trim() !== "") {
-                        links += "<a href='" +
+                        downloadLinks +=
+                            "<a href='" +    
                             info[i]["差分URL"] +
                             "' target='_blank'>差分</a>";
-                    }                    
+                    }            
 
-                    // 何も無い時
-                    if (links === "") {
-                        links = "-";
+                    // 空欄対策
+                    if (downloadLinks === "") {
+                        downloadLinks = "-";
                     }
 
+                    $("<td width='10%'>" + downloadLinks + "</td>").appendTo(str);
                     $("<td width='10%'>" + links + "</td>").appendTo(str);
 
                     // 譜面画像
