@@ -82,12 +82,38 @@
                     $("<td width='20%'>" + info[i].artist + "</td>").appendTo(str);
 
 
-                    // 動画
-                    $("<td width='10%'>" +
-                        "<a href='https://www.youtube.com/watch?v=" + info[
-                            i]
-                        .youtube + "' target='_blank'>" + "動画" + "</a></td>").appendTo(str);
-                    
+// Links列（動画 / 本体 / 差分）
+var links = "";
+
+// 動画
+if (info[i].youtube && info[i].youtube.trim() !== "") {
+    links += "<a href='https://www.youtube.com/watch?v=" +
+        info[i].youtube +
+        "' target='_blank'>動画</a> ";
+}
+
+// 本体URL
+if (info[i].url && info[i].url.trim() !== "") {
+    links += "<a href='" +
+        info[i].url +
+        "' target='_blank'>本体</a> ";
+}
+
+// 差分URL
+if (info[i].append_url && info[i].append_url.trim() !== "") {
+    links += "<a href='" +
+        info[i].append_url +
+        "' target='_blank'>差分</a>";
+}
+
+// 空なら「-」表示
+if (links === "") {
+    links = "-";
+}
+
+$("<td width='10%'>" + links + "</td>").appendTo(str);
+
+
                     // 譜面画像
                     $("<td width='10%'>" +
                         "<a href='https://bms-score-viewer.pages.dev/view?md5=" + info[
