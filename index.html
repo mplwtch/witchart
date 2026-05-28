@@ -127,8 +127,17 @@
                             i]
                         .md5 + "' target='_blank'>" + "譜面画像" + "</a></td>").appendTo(str);
                     
-                    // Comment
-                    $("<td width='10%'>" + info[i].comment + "</td>").appendTo(str);
+
+                    // Comment（マウスオーバー表示）
+                    var commentText = info[i].comment ? info[i].comment : "";
+
+                    if (commentText.trim() !== "") {
+                        $("<td width='10%'>" +
+                            "<span title='" + commentText + "' style='cursor:pointer;'>💬</span>" +
+                            "</td>").appendTo(str);
+                    } else {
+                        $("<td width='10%'>-</td>").appendTo(str);
+                    }
                     
                     str.appendTo(obj);
                     count++;
