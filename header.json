@@ -15,4 +15,5 @@
 {"name":"Witchart 異世界転生 スキル《ギルドマスター》","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["a03a6fb99314771b5f408e1556b1d124","5bbb54a97723a828dd2bd80759891d1f","d4fbc1984065d8e8e10f093714875dfe","8f736568e91c14df55a5d29f71e3356d"]},
 {"name":"Witchart 異世界転生 スキル《勇者》","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["be057d989e0b40b76254133e7df3c6ac","02b4415fab3c3941780eb92355ed19cb","3d75cb1628f6a177c0d33fa3c314272d","38cde0f87a2f1a29578766de24ad2091"]}
 ]
+  
 }
